@@ -80,6 +80,13 @@ textlint --rule no-doubled-joshi README.md
             "strict": false,
             // 助詞のうち「も」「や」は複数回の出現を許す
             "allow": ["も","や"],
+            // 助詞に対してどの回数まで出現を許すか
+            "allowCount": {
+              "が": 2,
+              "も": 3
+            }
+            // 直接数字を指定すれば全ての助詞に対してその数だけ出現を許す
+            // "allowCount": 3
             // 文の区切り文字となる配列
             "separatorCharacters": [
                 ".", // period
